@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "AQI",
+    "importance": 34.106
+  },
+  {
+    "feature": "PM2.5",
+    "importance": 9.608
+  },
+  {
+    "feature": "PM10",
+    "importance": 3.305
+  },
+  {
+    "feature": "AQI_roll_mean_7d",
+    "importance": 1.114
+  },
+  {
+    "feature": "PM10_roll_mean_7d",
+    "importance": 0.835
+  },
+  {
+    "feature": "city_Delhi",
+    "importance": 0.813
+  },
+  {
+    "feature": "CO_lag_7",
+    "importance": 0.636
+  },
+  {
+    "feature": "AQI_roll_mean_3d",
+    "importance": 0.543
+  },
+  {
+    "feature": "CO",
+    "importance": 0.514
+  },
+  {
+    "feature": "NO2",
+    "importance": 0.475
+  },
+  {
+    "feature": "SO2_lag_2",
+    "importance": 0.42
+  },
+  {
+    "feature": "NH3",
+    "importance": 0.406
+  },
+  {
+    "feature": "SO2",
+    "importance": 0.379
+  },
+  {
+    "feature": "CO_lag_3",
+    "importance": 0.36
+  },
+  {
+    "feature": "month_cos",
+    "importance": 0.356
+  }
+]

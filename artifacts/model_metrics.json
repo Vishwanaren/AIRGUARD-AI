@@ -1,0 +1,496 @@
+{
+  "regression": {
+    "Persistence Baseline": {
+      "val_metrics": {
+        "mae": 15.269,
+        "rmse": 21.03,
+        "r2": 0.9125
+      },
+      "test_metrics": {
+        "mae": 14.17,
+        "rmse": 19.297,
+        "r2": 0.9324
+      }
+    },
+    "Linear Regression (Ridge)": {
+      "val_metrics": {
+        "mae": 14.543,
+        "rmse": 19.706,
+        "r2": 0.9232
+      },
+      "test_metrics": {
+        "mae": 13.617,
+        "rmse": 18.195,
+        "r2": 0.9399
+      }
+    },
+    "Random Forest": {
+      "val_metrics": {
+        "mae": 14.618,
+        "rmse": 19.991,
+        "r2": 0.9209
+      },
+      "test_metrics": {
+        "mae": 13.721,
+        "rmse": 18.332,
+        "r2": 0.939
+      }
+    },
+    "Gradient Boosting": {
+      "val_metrics": {
+        "mae": 14.579,
+        "rmse": 19.947,
+        "r2": 0.9213
+      },
+      "test_metrics": {
+        "mae": 13.552,
+        "rmse": 18.148,
+        "r2": 0.9402
+      }
+    },
+    "XGBoost": {
+      "val_metrics": {
+        "mae": 14.525,
+        "rmse": 19.906,
+        "r2": 0.9216
+      },
+      "test_metrics": {
+        "mae": 13.622,
+        "rmse": 18.239,
+        "r2": 0.9396
+      }
+    },
+    "LightGBM": {
+      "val_metrics": {
+        "mae": 14.514,
+        "rmse": 19.838,
+        "r2": 0.9221
+      },
+      "test_metrics": {
+        "mae": 13.592,
+        "rmse": 18.187,
+        "r2": 0.9399
+      }
+    }
+  },
+  "classification": {
+    "Random Forest Classifier": {
+      "val_metrics": {
+        "accuracy": 0.7822,
+        "weighted_f1": 0.7813,
+        "precision": 0.7817,
+        "recall": 0.7822,
+        "adjacent_accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            451,
+            183,
+            0,
+            0,
+            0
+          ],
+          [
+            130,
+            1155,
+            137,
+            0,
+            0
+          ],
+          [
+            0,
+            147,
+            912,
+            52,
+            0
+          ],
+          [
+            0,
+            0,
+            85,
+            275,
+            22
+          ],
+          [
+            0,
+            0,
+            0,
+            39,
+            62
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "test_metrics": {
+        "accuracy": 0.7682,
+        "weighted_f1": 0.7683,
+        "precision": 0.7695,
+        "recall": 0.7682,
+        "adjacent_accuracy": 0.9995,
+        "confusion_matrix": [
+          [
+            742,
+            256,
+            0,
+            0,
+            0
+          ],
+          [
+            209,
+            1068,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            123,
+            684,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            43,
+            203,
+            18
+          ],
+          [
+            0,
+            0,
+            2,
+            43,
+            107
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      }
+    },
+    "Gradient Boosting Classifier": {
+      "val_metrics": {
+        "accuracy": 0.7751,
+        "weighted_f1": 0.7746,
+        "precision": 0.7745,
+        "recall": 0.7751,
+        "adjacent_accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            470,
+            164,
+            0,
+            0,
+            0
+          ],
+          [
+            143,
+            1142,
+            137,
+            0,
+            0
+          ],
+          [
+            0,
+            163,
+            889,
+            59,
+            0
+          ],
+          [
+            0,
+            0,
+            86,
+            266,
+            30
+          ],
+          [
+            0,
+            0,
+            0,
+            39,
+            62
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "test_metrics": {
+        "accuracy": 0.7693,
+        "weighted_f1": 0.7695,
+        "precision": 0.7709,
+        "recall": 0.7693,
+        "adjacent_accuracy": 0.9997,
+        "confusion_matrix": [
+          [
+            769,
+            229,
+            0,
+            0,
+            0
+          ],
+          [
+            224,
+            1057,
+            116,
+            0,
+            0
+          ],
+          [
+            0,
+            127,
+            670,
+            42,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            208,
+            18
+          ],
+          [
+            0,
+            0,
+            1,
+            47,
+            104
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      }
+    },
+    "XGBoost Classifier": {
+      "val_metrics": {
+        "accuracy": 0.7805,
+        "weighted_f1": 0.7801,
+        "precision": 0.78,
+        "recall": 0.7805,
+        "adjacent_accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            471,
+            163,
+            0,
+            0,
+            0
+          ],
+          [
+            141,
+            1144,
+            137,
+            0,
+            0
+          ],
+          [
+            0,
+            156,
+            899,
+            56,
+            0
+          ],
+          [
+            0,
+            0,
+            86,
+            269,
+            27
+          ],
+          [
+            0,
+            0,
+            0,
+            35,
+            66
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "test_metrics": {
+        "accuracy": 0.7721,
+        "weighted_f1": 0.7723,
+        "precision": 0.7732,
+        "recall": 0.7721,
+        "adjacent_accuracy": 0.9997,
+        "confusion_matrix": [
+          [
+            766,
+            232,
+            0,
+            0,
+            0
+          ],
+          [
+            217,
+            1067,
+            113,
+            0,
+            0
+          ],
+          [
+            0,
+            128,
+            672,
+            39,
+            0
+          ],
+          [
+            0,
+            0,
+            39,
+            204,
+            21
+          ],
+          [
+            0,
+            0,
+            1,
+            42,
+            109
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      }
+    },
+    "LightGBM Classifier": {
+      "val_metrics": {
+        "accuracy": 0.7805,
+        "weighted_f1": 0.7798,
+        "precision": 0.7798,
+        "recall": 0.7805,
+        "adjacent_accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            465,
+            169,
+            0,
+            0,
+            0
+          ],
+          [
+            136,
+            1158,
+            128,
+            0,
+            0
+          ],
+          [
+            0,
+            156,
+            901,
+            54,
+            0
+          ],
+          [
+            0,
+            0,
+            93,
+            264,
+            25
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            61
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "test_metrics": {
+        "accuracy": 0.7638,
+        "weighted_f1": 0.7641,
+        "precision": 0.7652,
+        "recall": 0.7638,
+        "adjacent_accuracy": 0.9997,
+        "confusion_matrix": [
+          [
+            754,
+            244,
+            0,
+            0,
+            0
+          ],
+          [
+            221,
+            1056,
+            120,
+            0,
+            0
+          ],
+          [
+            0,
+            133,
+            664,
+            42,
+            0
+          ],
+          [
+            0,
+            0,
+            37,
+            206,
+            21
+          ],
+          [
+            0,
+            0,
+            1,
+            43,
+            108
+          ]
+        ],
+        "labels": [
+          "Good",
+          "Satisfactory",
+          "Moderate",
+          "Poor",
+          "Very Poor"
+        ]
+      }
+    }
+  },
+  "selected_regression_model": "LightGBM",
+  "selected_classification_model": "Random Forest Classifier"
+}
