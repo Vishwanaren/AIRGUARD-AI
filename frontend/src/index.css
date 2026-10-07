@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-stone-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200 antialiased font-sans;
+}
+
+.glass-card {
+  @apply bg-white dark:bg-slate-900 border border-stone-200/80 dark:border-slate-800 shadow-sm rounded-3xl transition-all duration-200;
+}
+
+.glass-card-hover {
+  @apply bg-white dark:bg-slate-900 border border-stone-200/80 dark:border-slate-800 shadow-sm rounded-3xl transition-all duration-200 hover:shadow-md hover:border-emerald-500/40 dark:hover:border-emerald-500/40;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}
